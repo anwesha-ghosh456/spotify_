@@ -1,0 +1,432 @@
+body{
+    background-color: rgb(73, 196, 83);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    font-family: 'Ubuntu',sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: rgb(42, 41, 41);
+    color: aliceblue;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+nav ul .search-box {
+    margin-left: auto; 
+    padding-right: 20px;
+}
+
+nav ul .search-box input[type="text"] {
+    padding: 8px; 
+    border-radius: 5px;
+    border: none;
+}
+
+
+.container{
+    padding: 30px;
+    min-height: 68vh;
+    background-color: rgb(16, 16, 16);
+    color: white;
+    font-family: Helvetica, sans-serif;
+    display:flex; 
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 20px;
+    background-image: url("back.jpg.crdownload");
+
+    
+
+}
+
+.container1{
+    padding: 30px;
+    min-height: 68vh;
+    background-color: rgb(16, 16, 16);
+    color: white;
+    font-family: Helvetica, sans-serif;
+    display:flex; 
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 20px;
+    background-image: url("background.jpeg");
+
+    
+
+}
+
+
+.name img{
+    width:90px;
+}
+
+.name{
+    display: flex;
+}
+
+.bottom{
+    position: sticky;
+    height: 85px;
+    background-color: rgb(56, 52, 52);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 12px 0;
+}
+
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor: pointer;
+}
+
+#songBar{
+    width: 90vw;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.songItemcontainer{
+    margin-top: 75px;
+}
+.songitem1{
+    height: 50px;
+    width:250px;
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(47, 46, 46);
+    color:white;
+    margin:12px;
+    justify-content: space-between;
+    
+    
+
+}
+
+.songitem2{
+    height: 50px;
+    width:250px;
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(47, 46, 46);
+    color:white;
+    margin:12px;
+    justify-content: space-between;
+    
+    
+    
+
+}
+
+.songitem3{
+    height: 50px;
+    width:250px;
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(47, 46, 46);
+    color:white;
+    margin:12px;
+    justify-content: space-between;
+    
+    
+    
+
+}
+
+.songitem4{
+    height: 50px;
+    width:250px;
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(47, 46, 46);
+    color:white;
+    margin:12px;
+    justify-content: space-between;
+    
+    
+
+}
+
+.songitem5{
+    height: 50px;
+    width:250px;
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(47, 46, 46);
+    color:white;
+    margin:12px;
+    justify-content: space-between;
+    
+    
+
+}
+
+.songitem6{
+    height: 50px;
+    width:250px;
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(47, 46, 46);
+    color:white;
+    margin:12px;
+    justify-content: space-between;
+    
+    
+    
+
+}
+.songitem7{
+    height: 50px;
+    width:250px;
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(47, 46, 46);
+    color:white;
+    margin:12px;
+    justify-content: space-between;
+    
+    
+    
+
+}
+
+.songitem8{
+    height: 50px;
+    width:250px;
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(47, 46, 46);
+    color:white;
+    margin:12px;
+    justify-content: space-between;
+    
+    
+
+}
+
+
+
+.songitem1 img{
+    width:50px;
+ 
+
+}
+
+.songitem2 img{
+    width:50px;
+    
+
+}
+
+.songitem3 img{
+    width:50px;
+    
+}
+
+.songitem4 img{
+    width:50px;
+    
+
+}
+.songitem5 img{
+    width:50px;
+    
+
+}
+
+.songitem6 img{
+    width:50px;
+    
+
+}
+.songitem7 img{
+    width:50px;
+    
+
+}
+.songitem8 img{
+    width:50px;
+    
+
+}
+
+.songInfo{
+    position: absolute;
+    left:3vw;
+
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.userAuth {
+    padding: 20px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    border-radius: 10px;
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+.userAuth h2 {
+    margin-bottom: 10px;
+}
+
+.form-container {
+    padding: 20px;
+    width:17vw;
+    flex-direction: column;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 10vw;
+    padding: 10px;
+    background-color: rgb(73, 196, 83);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(56, 147, 63);
+}
+
+
+.recentlyPlayed {
+    padding: 20px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    border-radius: 10px;
+    margin-left: 20px; 
+}
+
+.recentlyPlayed h2 {
+    margin-bottom: 10px;
+}
+
+.songList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.songList li {
+    margin-bottom: 10px;
+    display: flex; 
+    align-items: center; 
+}
+
+.songList li button {
+    margin-left: auto; 
+    background-color: rgb(73, 196, 83);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.songList li button:hover {
+    background-color: rgb(56, 147, 63);
+}
+
+.currentlyPlaying {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+
+.container {
+    display: flex;
+}
+
+.edge-container {
+    flex: 1;
+
+}
+
+
+.edge1 {
+    padding: 20px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+   
+}
+
+.edge2 {
+    padding: 20px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+    
+}
+
+.edge3 {
+    padding: 20px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    border-radius: 10px;
+    
+}
+
+
+
+
+.songtemContainer{
+    padding: 20px;
+    width:17vw;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+}

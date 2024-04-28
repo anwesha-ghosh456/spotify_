@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Concert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="name"><img src="Spotify.png" alt="Spotify"></li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Your Favourites</li>
+            <li>Podcasts</li>
+            <li class="search-box"><input type="text" placeholder="Search song"></li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+    
+    <div class="container">
+        <div class="songlist">
+          <h1><u>Play your concert! </u></h1>
+          <div class="songItemcontainer">
+            <div class="songitem1">
+                <img src="pic1.jpeg" >
+                <span>Alag Aasmaan</span>
+                <span class="songlistplay">3:32</span><span><i class="far fa-play-circle play-btn" onclick="playSong('pic1.mp3')"></i></span>
+            </div>
+            <div class="songitem2"> 
+                <img src="orepiya.jpeg">
+                <span>O Re Piya</span>
+                <span class="songlistplay"></span>6:19<span><i class="far fa-play-circle"></i></span>
+            </div>
+            <div class="songitem3"> 
+                <img src="spotiimg3.jpeg">
+                <span>Angels in Tibet</span>
+                <span class="songlistplay"></span>2:21<span><i class="far fa-play-circle"></i></span>
+            </div>
+            <div class="songitem4"> 
+                <img src="img4.jpg">
+                <span>Raabta</span>
+                <span class="songlistplay"></span>3:35<span><i class="far fa-play-circle"></i></span>
+            </div>
+            <div class="songitem5"> 
+                <img src="pga.jpeg">
+                <span>Piya Ghar Aavenge</span>
+                <span class="songlistplay"></span>4:31<span><i class="far fa-play-circle"></i></span>
+            </div>
+            <div class="songitem6"> 
+                <img src="nithurimg.jpeg">
+                <span>Nithur Manohar</span>
+                <span class="songlistplay"></span>2:21<span><i class="far fa-play-circle"></i></span>
+            </div>
+            <div class="songitem7"> 
+                <img src="hesokha.jpg">
+                <span>Hey Shokha</span>
+                <span class="songlistplay"></span>2:21<span><i class="far fa-play-circle"></i></span>
+            </div>
+            <div class="songitem8"> 
+                <img src="hesokha.jpg">
+                <span>Hey Shokha</span>
+                <span class="songlistplay"></span>2:21<span><i class="far fa-play-circle"></i></span>
+            </div>
+          </div>
+       </div>
+       <div class="recentlyPlayed">
+        <h2><u>Recently Played Songs</u></h2>
+        <ul class="songList">
+            <li>
+                <span>Piya Ghar Aavenge</span>
+                <button class="playButton" data-src="song1.mp3">Play</button>
+            </li>
+            <li>
+                <span>Raabta</span>
+                <button class="playButton" data-src="song2.mp3">Play</button>
+            </li>
+            <li>
+                <span>Angels In Tibet</span>
+                <button class="playButton" data-src="song3.mp3">Play</button>
+            </li>
+            <li>
+                <span>O Re Piya</span>
+                <button class="playButton" data-src="song4.mp3">Play</button>
+            </li>
+            <li>
+                <span>Ang Laga de</span>
+                <button class="playButton" data-src="song5.mp3">Play</button>
+            </li>
+            <li>
+                <span>Baarish</span>
+                <button class="playButton" data-src="song6.mp3">Play</button>
+            </li>
+        </ul>
+        <hr>
+        <p><a href="https://open.spotify.com/track/3mS7QkIx75iVG9JjXzKfIz" target="_blank">More songs</a></p>
+
+    </div>
+    
+       <div class="userAuth">
+        <h2><u>Sign Up / Login</u></h2>
+        <div class="form-container">
+            <form id="signupForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit">Sign-Up</button>
+            </form>
+            <hr>
+            <form id="loginForm">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+       </div> 
+    </div>
+       <div class="songbanner"></div>
+    </div>
+
+    
+        
+
+        <div class="currentlyPlaying">
+            <h3>Currently Playing:</h3>
+            <p id="currentSongTitle"></p>
+            <img src="play.gif" width="40px" alt=""> <span id="currentSong"></span>
+            <div class="bottom">
+                <input type="range" name="range" id="songBar" min="0" max="100">
+                <div class="icons">
+                
+                   <i class="fas fa-3x fa-step-backward"></i>
+                   <i class="far fa-3x fa-play-circle"></i>
+                   <i class="fas fa-3x fa-step-forward"></i>
+                </div>
+        </div>
+  
+
+    </div>
+
+    <div class="container1">
+        <div class="Classical">
+            <h2><u>YOUR GENRE</u></h2>
+
+            <div class="edge-container">
+                <div class="edge1">
+                    <h2>Bollywood Edge</h2>
+                    <div class="songItemcontainer">
+                        
+                        <div class="songitem1">
+                            <div class="songItem" data-src="song5.mp3">
+                                <img src="pic1.jpeg" >
+                                <span>Alag Aasmaan</span>
+                                <span class="songlistplay">3:32</span><span><i class="far fa-play-circle"></i></span>
+                            </div>
+                            
+                        </div>    
+                        <div class="songitem2"> 
+                            <div class="songItem" data-src="song4.mp3"></div>
+                                <img src="orepiya.jpeg">
+                                <span>O Re Piya</span>
+                                <span class="songlistplay"></span>6:19<span><i class="far fa-play-circle"></i></span>
+                            </div>
+                        <div class="songitem3"> 
+                            <img src="spotiimg3.jpeg">
+                            <span>Angels in Tibet</span>
+                            <span class="songlistplay"></span>2:21<span><i class="far fa-play-circle"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="edge-container">
+                <div class="edge2">
+                    <h2>Hollywood Edge</h2>
+                    <div class="songItemcontainer">
+                        <div class="songitem4"> 
+                            <img src="img4.jpg">
+                            <span>Raabta</span>
+                            <span class="songlistplay"></span>3:35<span></span>
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                        <div class="songitem5"> 
+                            <img src="pga.jpeg">
+                            <span>Piya Ghar Aavenge</span>
+                            <span class="songlistplay"></span>4:31<span><i class="far fa-play-circle"></i></span>
+                        </div>
+                        <div class="songitem6"> 
+                            <img src="nithurimg.jpeg">
+                            <span>Nithur Manohar</span>
+                            <span class="songlistplay"></span>2:21<span><i class="far fa-play-circle"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="edge-container">
+                <div class="edge3">
+                    <h2>Tollywood Edge</h2>
+                    <div class="songItemcontainer">
+                        <div class="songitem6"> 
+                            <img src="nithurimg.jpeg">
+                            <span>Nithur Manohar</span>
+                            <span class="songlistplay"></span>2:21<span><i class="far fa-play-circle"></i></span>
+                        </div>
+                        <div class="songitem7"> 
+                            <img src="hesokha.jpg">
+                            <span>Hey Shokha</span>
+                            <span class="songlistplay"></span>2:21<span><i class="far fa-play-circle"></i></span>
+                        </div>
+                        <div class="songitem8"> 
+                            <img src="hesokha.jpg">
+                            <span>Hey Shokha</span>
+                            <span class="songlistplay"></span>2:21<span><i class="far fa-play-circle"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
+
+
+    <script>
+        function playSong(song) {
+            var audio = new Audio(song);
+            audio.play();
+
+            
+            var progressBar = document.getElementById('songBar');
+            audio.addEventListener('timeupdate', function() {
+                var position = audio.currentTime / audio.duration;
+                progressBar.value = position * 100;
+            });
+
+            function playSong(song) {
+                 var audio = new Audio(song);
+                 audio.play();
+            } 
+
+            
+            
+
+            
+        }
+        var playButtons = document.querySelectorAll('.playButton');
+
+            function playSong(event) {
+            var songSrc = event.target.getAttribute('data-src');
+            var audio = new Audio(songSrc);
+            audio.play();
+            }
+
+
+            playButtons.forEach(function(button) {
+            button.addEventListener('click', playSong);
+            });
+
+        
+        function togglePlayPause(event) {
+            var button = event.target;
+            var songSrc = button.getAttribute('data-src');
+            var audio = new Audio(songSrc);
+
+            if (audio.paused) {
+                audio.play();
+                button.textContent = 'Pause';
+            } else {
+                audio.pause();
+                button.textContent = 'Play';
+            }
+        }
+
+
+        var playButtons = document.querySelectorAll('.playButton');
+        playButtons.forEach(function(button) {
+           button.addEventListener('click', togglePlayPause);
+        });
+
+        var currentSongTitleElement = document.getElementById('currentSongTitle');
+
+        function playSong(event) {
+            var button = event.target;
+            var songSrc = button.getAttribute('data-src');
+            var songTitle = button.previousElementSibling.textContent;
+            var audio = new Audio(songSrc);
+
+            if (audio.paused) {
+               audio.play();
+               button.textContent = 'Pause';
+               currentSongTitleElement.textContent = songTitle;
+            } else {
+               audio.pause();
+               button.textContent = 'Play';
+               currentSongTitleElement.textContent = '';
+            }
+        }
+
+       
+        var edge1Songs = document.querySelectorAll('.edge1 .songItem');
+
+
+        edge1Songs.forEach(function(songItem) {
+            songItem.addEventListener('click', function() {
+     
+                var songSrc = this.getAttribute('data-src');
+        
+        
+                var audio = new Audio(songSrc);
+                audio.play();
+            });
+        });
+
+
+var playButtons = document.querySelectorAll('.playButton');
+playButtons.forEach(function(button) {
+    button.addEventListener('click', playSong);
+});
+
+    
+    </script>
+   
+    <script src="https://kit.fontawesome.com/fd30d3a695.js" crossorigin="anonymous"></script>
+     
+</body>
+</html>
